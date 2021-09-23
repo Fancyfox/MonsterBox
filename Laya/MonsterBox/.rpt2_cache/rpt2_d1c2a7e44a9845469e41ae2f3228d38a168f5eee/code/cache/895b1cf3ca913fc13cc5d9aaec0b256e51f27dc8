@@ -1,0 +1,6 @@
+{
+  "code": "import { PanelBase, UITYpes } from \"./PanelBase\";\r\nexport default class MainUI extends PanelBase {\r\n    constructor() {\r\n        super();\r\n        this.type = UITYpes.PANEL;\r\n    }\r\n    onAwake() {\r\n        console.log(\"onawake\");\r\n        this._mainView = this.owner;\r\n        this._uiBox = this._mainView.getChildAt(0);\r\n        this._startBtn = this._uiBox.getChildByName(\"StartBtn\");\r\n        this._settingBtn = this._uiBox.getChildByName(\"SettingBtn\");\r\n        this._safariSceneBtn = this._uiBox.getChildByName(\"SafariSceneBtn\");\r\n        this._cityParkSceneBtn = this._uiBox.getChildByName(\"CityparkSceneBtn\");\r\n        this._boxList = this._uiBox.getChildByName(\"BoxList\");\r\n    }\r\n    onStart() {\r\n        this._startBtn.on(Laya.Event.CLICK, this, this._startGame);\r\n        this._settingBtn.on(Laya.Event.CLICK, this, this._showSetting);\r\n        this._safariSceneBtn.on(Laya.Event.CLICK, this, this._enterSafariSecene);\r\n        this._cityParkSceneBtn.on(Laya.Event.CLICK, this, this._enterCityparkScene);\r\n    }\r\n    _startGame() {\r\n    }\r\n    _showSetting() {\r\n    }\r\n    _enterSafariSecene() {\r\n    }\r\n    _enterCityparkScene() {\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/UI/PanelBase.ts"
+  ]
+}

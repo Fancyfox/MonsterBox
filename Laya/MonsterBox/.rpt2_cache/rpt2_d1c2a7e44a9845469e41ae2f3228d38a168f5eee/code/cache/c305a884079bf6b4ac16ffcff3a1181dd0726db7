@@ -1,0 +1,6 @@
+{
+  "code": "import Mathf from \"./Mathf\";\r\nexport default (function () {\r\n    Laya.Graphics.prototype.drawCircleWithAngle = function drawCircleWithAngle(x, y, radius, startAngle, endAngle, offset, clockwise, fillColor, lineColor, lineWidth) {\r\n        let self = this;\r\n        let delta = 1;\r\n        startAngle += offset;\r\n        endAngle += offset;\r\n        let temp = endAngle;\r\n        if (startAngle > endAngle) {\r\n            endAngle = startAngle;\r\n            startAngle = temp;\r\n        }\r\n        if (endAngle - startAngle < delta)\r\n            return;\r\n        var points = [];\r\n        for (let i = startAngle; i <= endAngle; i += delta) {\r\n            let rad = i * Mathf.Deg2Rad;\r\n            points.push(Mathf.Sin(rad) * radius, Mathf.Cos(rad) * radius);\r\n        }\r\n        if (!clockwise)\r\n            points.reverse();\r\n        if (fillColor) {\r\n            if (endAngle - startAngle < 360)\r\n                points.push(x, y);\r\n            self.drawPoly(x, y, points, fillColor, lineColor, lineWidth);\r\n        }\r\n        else\r\n            self.drawLines(x, y, points, lineColor, lineWidth);\r\n    };\r\n})();\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Mathf.ts"
+  ]
+}

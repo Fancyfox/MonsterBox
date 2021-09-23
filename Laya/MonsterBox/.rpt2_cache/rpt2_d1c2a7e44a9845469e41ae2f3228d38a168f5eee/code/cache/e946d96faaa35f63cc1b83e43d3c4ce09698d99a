@@ -1,0 +1,14 @@
+{
+  "code": "import './Quaternion';\r\nimport './Vector3';\r\nimport './Vector2';\r\nimport './Node';\r\nimport './Transform3D';\r\nimport './Graphics';\r\nimport './Color';\r\nimport './Array';\r\nimport './Matrix4x4';\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Quaternion.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Vector3.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Vector2.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Node.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Transform3D.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Graphics.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Color.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Array.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Extensions/Matrix4x4.ts"
+  ]
+}

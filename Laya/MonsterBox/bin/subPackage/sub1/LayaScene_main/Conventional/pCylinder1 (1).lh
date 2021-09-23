@@ -1,0 +1,38 @@
+{
+	"version":"LAYAHIERARCHY:02",
+	"data":{
+		"type":"MeshSprite3D",
+		"instanceID":252,
+		"props":{
+			"name":"pCylinder1 (1)",
+			"active":true,
+			"isStatic":false,
+			"layer":0,
+			"position":[
+				17,
+				3.37,
+				0
+			],
+			"rotation":[
+				0,
+				0,
+				0,
+				-1
+			],
+			"scale":[
+				1,
+				4,
+				1
+			],
+			"meshPath":"Assets/Mesh/pCylinder1-pCylinder1_0.lm",
+			"enableRender":true,
+			"materials":[
+				{
+					"path":"Assets/Texture2D/Materials/Texture2.lmat"
+				}
+			]
+		},
+		"components":[],
+		"child":[]
+	}
+}

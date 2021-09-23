@@ -1,0 +1,6 @@
+{
+  "code": "import GameUI from \"./script/GameUI\";\r\nexport default class GameConfig {\r\n    constructor() {\r\n    }\r\n    static init() {\r\n        var reg = Laya.ClassUtils.regClass;\r\n        reg(\"script/GameUI.ts\", GameUI);\r\n    }\r\n}\r\nGameConfig.width = 640;\r\nGameConfig.height = 1136;\r\nGameConfig.scaleMode = \"fixedwidth\";\r\nGameConfig.screenMode = \"none\";\r\nGameConfig.alignV = \"top\";\r\nGameConfig.alignH = \"left\";\r\nGameConfig.startScene = \"test/TestScene.scene\";\r\nGameConfig.sceneRoot = \"\";\r\nGameConfig.debug = false;\r\nGameConfig.stat = false;\r\nGameConfig.physicsDebug = false;\r\nGameConfig.exportSceneToJson = true;\r\nGameConfig.init();\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/GameUI.ts"
+  ]
+}

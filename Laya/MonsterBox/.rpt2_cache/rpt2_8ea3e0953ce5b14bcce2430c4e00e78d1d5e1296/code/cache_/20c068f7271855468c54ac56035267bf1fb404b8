@@ -1,0 +1,7 @@
+{
+  "code": "var Vector3 = Laya.Vector3;\r\nvar Quaternion = Laya.Quaternion;\r\nimport Entity from \"./Entity\";\r\nexport default class Obj extends Entity {\r\n    get tag() {\r\n        return this.data.tag;\r\n    }\r\n    get entityId() {\r\n        return this.data.id;\r\n    }\r\n    init(data) {\r\n        this.data = data;\r\n        let p = new Vector3();\r\n        let q = new Quaternion();\r\n        let s = new Vector3();\r\n        let m = new Laya.Matrix4x4().fromArray(data.transform);\r\n        this.transform.worldMatrix = m;\r\n    }\r\n    onDestroy() {\r\n        super.onDestroy();\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/Entity/Entity.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/GameData.ts"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "code": "export class Constants {\r\n}\r\nConstants.version = \"1.0.0\";\r\nConstants.UIPage = {\r\n    main: \"Mian\",\r\n    loading: \"Loading\",\r\n    shop: \"Shop\",\r\n    setting: \"Setting\",\r\n    coinEffect: \"CoinEffect\"\r\n};\r\nConstants.GameConfigID = 'MONSTER_BOX';\r\nConstants.LevelTick = 'level_tick';\r\nConstants.AudioConfigID = 'audioConfigID';\r\nConstants.PlayerInfoID = 'playerInfoID';\r\nConstants.ShopInfoID = 'shopInfoID';\r\nConstants.GameRecordID = 'gameRecordID';\r\nConstants.DailyTick = 'dailyTick';\r\n",
+  "references": []
+}

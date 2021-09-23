@@ -1,0 +1,4 @@
+{
+  "code": "export default class DateUtil {\r\n    static isToday(time) {\r\n        return new Date(time).toLocaleDateString() == new Date().toLocaleDateString();\r\n    }\r\n    static isSameDay(time1, time2) {\r\n        return new Date(time1).toLocaleTimeString() == new Date(time2).toLocaleDateString();\r\n    }\r\n    static GetNextDay(time) {\r\n        let today = new Date(time).toLocaleDateString();\r\n        let tomorrow = new Date(today).getTime() + 24 * 60 * 60 * 1000;\r\n        return new Date(tomorrow);\r\n    }\r\n}\r\n",
+  "references": []
+}

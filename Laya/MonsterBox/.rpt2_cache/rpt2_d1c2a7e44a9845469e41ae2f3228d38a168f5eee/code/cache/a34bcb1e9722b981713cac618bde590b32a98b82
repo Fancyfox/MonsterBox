@@ -1,0 +1,4 @@
+{
+  "code": "var Vector3 = Laya.Vector3;\r\nvar Vector4 = Laya.Vector4;\r\nexport default (function () {\r\n    Laya.Color.prototype.toVector3 = function (target) {\r\n        let self = this;\r\n        target = target || new Vector3();\r\n        target.x = self.r;\r\n        target.y = self.g;\r\n        target.z = self.b;\r\n        return target;\r\n    };\r\n    Laya.Color.prototype.toVector4 = function (target) {\r\n        let self = this;\r\n        target = target || new Vector4();\r\n        target.x = self.r;\r\n        target.y = self.g;\r\n        target.z = self.b;\r\n        target.w = self.a;\r\n        return target;\r\n    };\r\n})();\r\n",
+  "references": []
+}

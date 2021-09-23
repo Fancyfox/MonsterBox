@@ -1,0 +1,6 @@
+{
+  "code": "import GameDefine, { GameState } from \"../script/Singleton/GameDefine\";\r\nexport default class Camera extends Laya.Script3D {\r\n    constructor() {\r\n        super();\r\n        Camera.instance = this;\r\n    }\r\n    onAwake() {\r\n        this._camera = this.owner;\r\n        this._cameraPos = this._camera.transform.position.clone();\r\n    }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onLateUpdate() {\r\n        if (Laya.timer.delta > 100) {\r\n            return;\r\n        }\r\n        if (GameDefine.gameState != GameState.Playing) {\r\n            return;\r\n        }\r\n        this._lookAtTarget(this._target, this._point);\r\n    }\r\n    _lookAtTarget(target, point) {\r\n        if (!target || !point) {\r\n            return;\r\n        }\r\n        let pos = point.transform.position;\r\n        this._cameraPos.setValue(pos.x, pos.y, pos.z);\r\n        this._camera.transform.position = this._cameraPos;\r\n        this._camera.transform.lookAt(target.transform.position, Laya.Vector3.up);\r\n    }\r\n}\r\nCamera.instance = null;\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/GameDefine.ts"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "code": "import { PanelBase, UITYpes } from \"./PanelBase\";\r\nexport default class Loading extends PanelBase {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.type = UITYpes.TIP;\r\n        this._startRotate = false;\r\n    }\r\n    onAwake() {\r\n        this._loading = this.owner;\r\n        this._uiBox = this._loading.getChildAt(0);\r\n        this._round = this._uiBox.getChildByName(\"Round\");\r\n    }\r\n    onUpdate() {\r\n        if (Laya.timer.delta > 100) {\r\n            return;\r\n        }\r\n        if (this._startRotate) {\r\n            this._round.rotation += 20;\r\n        }\r\n    }\r\n    show() {\r\n        super.show();\r\n        this._startRotate = true;\r\n    }\r\n    hide() {\r\n        super.hide();\r\n        this._startRotate = false;\r\n        this._round.rotation = 0;\r\n        console.log(\"hide+++++++++++\");\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/UI/PanelBase.ts"
+  ]
+}

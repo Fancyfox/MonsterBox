@@ -1,0 +1,18 @@
+[
+  {
+    "flatMessage": "Property 'scene3d' does not exist on type 'typeof GameData'.",
+    "formatted": "\u001b[96m../../../../WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts\u001b[0m:\u001b[93m27\u001b[0m:\u001b[93m37\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'scene3d' does not exist on type 'typeof GameData'.\r\n\r\n\u001b[7m27\u001b[0m                 (parent || GameData.scene3d).addChild(p);\r\n\u001b[7m  \u001b[0m \u001b[91m                                    ~~~~~~~\u001b[0m\r\n\u001b[96m../../../../WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts\u001b[0m:\u001b[93m36\u001b[0m:\u001b[93m41\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'scene3d' does not exist on type 'typeof GameData'.\r\n\r\n\u001b[7m36\u001b[0m                     (parent || GameData.scene3d).addChild(ins);\r\n\u001b[7m  \u001b[0m \u001b[91m                                        ~~~~~~~\u001b[0m\r\n",
+    "category": 1,
+    "code": 2339,
+    "type": "semantic",
+    "fileLine": "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts(27,37)"
+  },
+  {
+    "flatMessage": "Property 'scene3d' does not exist on type 'typeof GameData'.",
+    "formatted": "\u001b[96m../../../../WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts\u001b[0m:\u001b[93m27\u001b[0m:\u001b[93m37\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'scene3d' does not exist on type 'typeof GameData'.\r\n\r\n\u001b[7m27\u001b[0m                 (parent || GameData.scene3d).addChild(p);\r\n\u001b[7m  \u001b[0m \u001b[91m                                    ~~~~~~~\u001b[0m\r\n\u001b[96m../../../../WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts\u001b[0m:\u001b[93m36\u001b[0m:\u001b[93m41\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'scene3d' does not exist on type 'typeof GameData'.\r\n\r\n\u001b[7m36\u001b[0m                     (parent || GameData.scene3d).addChild(ins);\r\n\u001b[7m  \u001b[0m \u001b[91m                                        ~~~~~~~\u001b[0m\r\n",
+    "category": 1,
+    "code": 2339,
+    "type": "semantic",
+    "fileLine": "D:/WorkSpace/Laya2.6.1/MonsterBox/src/script/Singleton/EffectUtil.ts(36,41)"
+  }
+]

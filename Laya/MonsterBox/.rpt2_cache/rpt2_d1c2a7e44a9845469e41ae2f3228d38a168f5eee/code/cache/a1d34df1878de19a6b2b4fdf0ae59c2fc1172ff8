@@ -1,0 +1,6 @@
+{
+  "code": "import { Constants } from \"./Constants\";\r\nexport class Configuration {\r\n    constructor() {\r\n        this._jsonData = {};\r\n        this._markSave = false;\r\n    }\r\n    static instance() {\r\n        if (!this._instance) {\r\n            this._instance = new Configuration();\r\n        }\r\n        return this._instance;\r\n    }\r\n    init() {\r\n        const localStorage = Laya.LocalStorage.getJSON(Constants.GameConfigID);\r\n        if (localStorage) {\r\n            this._jsonData = JSON.parse(localStorage);\r\n        }\r\n        setInterval(this._scheduleSave.bind(this), 500);\r\n    }\r\n    getConfigData(key) {\r\n        const data = this._jsonData[key];\r\n        return data || '';\r\n    }\r\n    setConfigData(key, value) {\r\n        this._jsonData[key] = value;\r\n        this._markSave = true;\r\n    }\r\n    _scheduleSave() {\r\n        if (!this._markSave) {\r\n            return;\r\n        }\r\n        const data = JSON.stringify(this._jsonData);\r\n        Laya.LocalStorage.setJSON(Constants.GameConfigID, data);\r\n        this._markSave = false;\r\n    }\r\n}\r\nConfiguration._instance = null;\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/Data/Constants.ts"
+  ]
+}

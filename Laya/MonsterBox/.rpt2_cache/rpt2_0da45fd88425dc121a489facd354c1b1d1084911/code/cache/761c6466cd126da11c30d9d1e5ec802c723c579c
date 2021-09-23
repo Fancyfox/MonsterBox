@@ -1,0 +1,4 @@
+{
+  "code": "export default class RandomUtil {\r\n    static Random(min = 0, max = 1) {\r\n        return min + (max - min) * Math.random();\r\n    }\r\n    static RandomInteger(min = 0, max = 1) {\r\n        let ran = this.Random(min, max);\r\n        return Math.floor(ran);\r\n    }\r\n    static Shuffle(array) {\r\n        for (let len = array.length, i = len - 1; i >= 0; i--) {\r\n            let ran = Math.floor(Math.random() * i);\r\n            let temp = array[ran];\r\n            array[ran] = array[i];\r\n            array[i] = temp;\r\n        }\r\n        return array;\r\n    }\r\n}\r\n",
+  "references": []
+}

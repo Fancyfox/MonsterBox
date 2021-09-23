@@ -1,0 +1,38 @@
+{
+	"version":"LAYAHIERARCHY:02",
+	"data":{
+		"type":"MeshSprite3D",
+		"instanceID":0,
+		"props":{
+			"name":"Plane",
+			"active":true,
+			"isStatic":false,
+			"layer":0,
+			"position":[
+				0,
+				0,
+				0
+			],
+			"rotation":[
+				0,
+				0,
+				0,
+				-1
+			],
+			"scale":[
+				5,
+				5,
+				5
+			],
+			"meshPath":"Assets/Mesh/Plane _23787-Plane_0.lm",
+			"enableRender":true,
+			"materials":[
+				{
+					"path":"Assets/Texture2D/Materials/Plane.lmat"
+				}
+			]
+		},
+		"components":[],
+		"child":[]
+	}
+}

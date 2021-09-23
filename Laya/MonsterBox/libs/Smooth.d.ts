@@ -1,0 +1,1 @@
+declare function Smooth(arr: any[]): (n: number) => any;

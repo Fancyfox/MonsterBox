@@ -1,0 +1,7 @@
+{
+  "code": "import { Configuration } from \"../../Data/Configuration\";\r\nimport { Constants } from \"../../Data/Constants\";\r\nexport default class GameRecorderManager {\r\n    constructor() {\r\n        this._recordCount = 0;\r\n    }\r\n    static instance() {\r\n        if (!this._instance) {\r\n            this._instance = new GameRecorderManager();\r\n        }\r\n        return this._instance;\r\n    }\r\n    loadFromCache() {\r\n        const info = Configuration.instance().getConfigData(Constants.GameRecordID);\r\n        if (info) {\r\n            this._recordCount = JSON.parse(info);\r\n        }\r\n    }\r\n    saveInfoToCache() {\r\n        const data = JSON.stringify(this._recordCount);\r\n        Configuration.instance().setConfigData(Constants.GameRecordID, data);\r\n    }\r\n    canShowReward() {\r\n        if (!Laya.Browser.window.tt) {\r\n            return false;\r\n        }\r\n        return this._recordCount < 1;\r\n    }\r\n    resetHRecord() {\r\n        this._recordCount = 0;\r\n        this.saveInfoToCache();\r\n    }\r\n    addRecordCount() {\r\n        if (this.canShowReward()) {\r\n            this._recordCount++;\r\n            this.saveInfoToCache();\r\n        }\r\n    }\r\n}\r\nGameRecorderManager._instance = null;\r\n",
+  "references": [
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/Data/Configuration.ts",
+    "D:/WorkSpace/Laya2.6.1/MonsterBox/src/Data/Constants.ts"
+  ]
+}
